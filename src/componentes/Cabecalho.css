@@ -1,0 +1,31 @@
+.cabecalho {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+
+.cabecalho nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cabecalho nav a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.cabecalho nav a:hover,
+.cabecalho nav a.active {
+  text-decoration: underline;
+}
