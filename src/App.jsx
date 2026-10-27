@@ -7,7 +7,6 @@ import Create from "./componentes/Create";
 import Update from "./componentes/Update";
 import Read from "./componentes/Read";
 import Remove from "./componentes/Remove";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

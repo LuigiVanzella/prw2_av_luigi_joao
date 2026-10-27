@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+
+  --fundo: #090b1a;
+  --superficie: #14172e;
+  --texto: #f4f3ff;
+  --texto-suave: #b5b6d3;
+  --neon-rosa: #ff4fce;
+  --neon-ciano: #53e8ff;
+
+  --bs-body-color: var(--texto);
+  --bs-body-bg: var(--fundo);
+  --bs-body-font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: var(--fundo);
+  background-image:
+    radial-gradient(
+      ellipse at 15% 0%,
+      rgba(255, 79, 206, 0.16),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 85% 15%,
+      rgba(83, 232, 255, 0.12),
+      transparent 45%
+    ),
+    linear-gradient(
+      rgba(83, 232, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(83, 232, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    48px 48px,
+    48px 48px;
+
+  color: var(--texto);
+  font-family: var(--bs-body-font-family);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 24px 16px 64px;
+}
+
+::selection {
+  background: var(--neon-rosa);
+  color: var(--fundo);
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgba(83, 232, 255, 0.2);
+}
+
+:focus-visible {
+  outline: 2px solid var(--neon-ciano);
+  outline-offset: 4px;
+}
+
+@media (max-width: 576px) {
+  #root {
+    padding: 12px 8px 40px;
+  }
+}
