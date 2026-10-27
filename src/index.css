@@ -83,3 +83,106 @@ textarea {
     padding: 12px 8px 40px;
   }
 }
+/* Tipografia e contraste do tema */
+:root {
+  --texto: #d8deef;
+  --texto-suave: #aebbd2;
+  --bs-body-font-family: "Rajdhani", sans-serif;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Substitui os painéis brancos usados nos componentes */
+#root .bg-white {
+  background-color: var(--superficie) !important;
+  color: var(--texto);
+}
+
+#root .text-dark {
+  color: var(--texto) !important;
+}
+
+#root .border {
+  border-color: rgba(83, 232, 255, 0.25) !important;
+}
+
+/* Cabeçalho */
+#root .cabecalho {
+  background: linear-gradient(135deg, #191431, #0c162a);
+  border: 1px solid rgba(83, 232, 255, 0.3);
+  border-radius: 20px;
+}
+
+#root .cabecalho h1 {
+  color: var(--neon-ciano);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(83, 232, 255, 0.3);
+}
+
+#root .cabecalho nav a {
+  color: var(--texto-suave);
+  font-weight: 700;
+}
+
+#root .cabecalho nav a:hover,
+#root .cabecalho nav a.active,
+#root .cabecalho nav a[aria-current="page"] {
+  color: var(--neon-rosa);
+}
+
+/* Títulos e rótulos dos formulários */
+#root .container h3 {
+  color: var(--neon-ciano);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+#root .form-label {
+  color: var(--texto);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Campos com texto e placeholder legíveis */
+#root .form-control,
+#root .form-select {
+  background-color: #0c1023;
+  color: var(--texto);
+  border: 1px solid #485574;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 12px 14px;
+}
+
+#root .form-control::placeholder {
+  color: #9aa9c4;
+  opacity: 1;
+}
+
+#root .form-control:focus,
+#root .form-select:focus {
+  background-color: #10162d;
+  color: var(--texto);
+  border-color: var(--neon-ciano);
+  box-shadow: 0 0 0 3px rgba(83, 232, 255, 0.15);
+}
+
+#root .btn {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
